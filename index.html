@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="ru-ru">
+<head>
+	<title>Маркетинг - Experum</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body class="body">
+	<div class="site">
+		<div class="page page--inner">
+			<div class="page__wrapper">
+				<!-- Header -->
+				
+				<header class="site-header">
+				    <div class="site-header__wrapper container">
+				        <div class="site-header__item site-header__item--logo">
+				            <button class="site-header__toggle" type="button" name="button">
+				            </button>
+				            <div class="site-logo">
+				                <a href="/">
+				                    <picture>
+				                        <source media="(min-width: 1150px)" srcset="https://experum.ru/img/site-logo@2x.png 2x">
+				                        <source media="(min-width: 768px)" srcset="https://experum.ru/img/site-logo--tablet.png, /img/site-logo--tablet@2x.png 2x">
+				                        <img class="site-logo__picture" src="https://experum.ru/img/site-logo--mobile.png" srcset="https://experum.ru/img/site-logo--mobile@2x.png 2x" alt="Logo Experum" width="98" height="23">
+				                    </picture>
+				                </a>
+				            </div>
+				        </div>
+				        <div class="site-header__item site-header__item--nav site-header__item--hidden">
+				            <nav class="header-nav">
+				                <div class="header-nav__item">
+				                    <a href="/mentors/">Менторы</a>
+				                </div>
+				                <div class="header-nav__item">
+				                    <a href="/experts/">Эксперты</a>
+				                </div>
+				                <div class="header-nav__item">
+				                    <a href="#">Проекты</a>
+				                </div>
+				                <div class="header-nav__item">
+				                    <a href="#">Мероприятия</a>
+				                </div>
+				                <div class="header-nav__item header-nav__item--selected">
+				                    <a href="#">Календарь событий</a>
+				                </div>
+				            </nav>
+				        </div>
+				        <!-- <div class="site-header__item site-header__item--social site-header__item--log-in">
+				            <a class="social-icon social-icon--iphone-visible" href="https://api.whatsapp.com/send?phone=79295861019">
+				                <span class="social-icon__whatsup">
+				                            </span>
+				            </a>
+				            <a class="social-icon social-icon--iphone-visible" href="https://telegram.im/@experum">
+				                <span class="social-icon__telegramm">
+				                            </span>
+				            </a>
+				            <div class="header-contacts header-contacts--login">
+				                <div class="header-contacts__item header-contacts__item--tel header-contacts__item--tel-login">
+				                    <a href="tel:+7-800-550-27-99">
+				                        <span class="header-contacts__tel">8 800 550-27-99</span>
+				                    </a>
+				                </div>
+				            </div>
+				        </div> -->
+				        <div class="site-header__item site-header__item--account-contacts site-header__item--hidden">
+				            <div class="header-contacts">
+				                <a class="social-icon social-icon--hidden" href="https://api.whatsapp.com/send?phone=79295861019">
+				                    <span class="social-icon__whatsup">
+				                                  </span>
+				                </a>
+				                <a class="social-icon social-icon--hidden" href="https://telegram.im/@experum">
+				                    <span class="social-icon__telegramm">
+				                                  </span>
+				                </a>
+				                <div class="header-contacts__item header-contacts__item--tel">
+				                    <a href="tel:+7-800-550-27-99">
+				                        <span class="header-contacts__tel">8 800 550-27-99</span>
+				                    </a>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="site-header__item site-header__item--login site-header__item--hidden">
+				            <div class="site-header__login site-header__login--hidden">
+				                <div class="header-login">
+				                    <a href="#">
+				                    </a>
+				                    <div class="entrance-wrapp">
+				                        <a href="#">
+				                            <div class="entrance-imgbox">
+				
+				                                <img title="D M" alt="userpic.png" src="../img/userpic.png" srcset="../img/userpic@2x.png 2x">
+				                                <svg class="arrow-avatar arrow-avatar--hidden" xmlns="http://www.w3.org/2000/svg" width="37" height="18" viewBox="0 0 37 18">
+				                                    <defs>
+				                                        <style>
+				                                            .cls-1 {
+				                                                fill: #fff;
+				                                                fill-rule: evenodd;
+				                                            }
+				                                        </style>
+				                                    </defs>
+				                                    <path id="Прямоугольник_1046" data-name="Прямоугольник 1046" class="cls-1" d="M0.006,18L18.5,0.006,36.994,18,18.5,35.994Z"></path>
+				                                </svg>
+				                            </div>
+				                        </a>
+				                        <div class="entrance-content">
+				                            <a href="#">
+				                                <span class="entrance-content-title">Павел Лавреньев</span>
+				                                <span class="entrance-content-subtitle">
+				                                    10 заявок – 60 000 <span class="rouble">Ж</span>
+				                                </span>
+				                            </a><a class="entrance-content__logout entrance-content__logout--link" href="/logout">Выйти</a>
+				                        </div>
+				                    </div>
+				
+				                </div>
+				                <div class="header-logout header-logout--hidden">
+				                    <div class="header-logout__wrapper">
+				                        <div class="triangle"></div>
+				                        <p class="header-logout__text header-logout__text--icon-mail"><a class="header-logout__link" href="/account/quotes/">Заявки</a>
+				                            <span class="header-logout__number">0</span>
+				                        </p>
+				                        <p class="header-logout__text header-logout__text--icon-favorites"><a class="header-logout__link" href="/account/favorites/">Избранное</a></p>
+				                        <p class="header-logout__text header-logout__text--icon-settings"><a class="header-logout__link" href="/account/profile/edit/">Настройки</a>
+				                            <span class="header-logout__number"></span>
+				                        </p>
+				                        <a class="header-logout__link header-logout__link--opacity" href="/logout">Выйти</a>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				
+				    </div>
+				</header>
+				
+				<!-- Header -->
+				<!-- Content -->
+				
+				<main class="site-content page--events">
+					<!-- Events Banner -->
+					<div class="events__banner dark-bg">
+						<div class="events__banner__img"></div>
+						<div class="events__banner__wrapper">
+						
+						<div class="events__banner__title">
+							<h2>Календарь событий</h1>
+							<h3>Лучшие экспертные и бизнес-мероприятия</h2>
+						</div>
+					
+						<div class="events__banner__form">
+					
+								<!-- Banner search form -->
+								<form action="#">
+									<div class="events__banner__form__container">
+										<div class="events__banner__form__searchfield">
+											<input id="events-searchfield" name="events-searchfield" placeholder="Введите имя, интересы или возможности..." tabindex="1">
+										</div>
+					
+										<div class="events__banner__form__cities">
+											<input id="cities-suggestion" placeholder="Город или район" tabindex="2" type="text" name="events-cities">
+										</div>
+					
+										<div class="events__banner__form__dropdown dropdown-list" tabindex="3">
+									        <span class="dropdown-list__title">Вид мероприятия</span>
+									        <span class="dropdown-list__arrow"></span>
+									        <div class="dropdown-list__closing-by-js"></div>
+									        <ul class="dropdown dropdown--events dropdown--hidden">
+									            <li class="dropdown__item dropdown__item--events" id="event-type-train">
+									                Тренинг
+									            </li>
+									            <li class="dropdown__item dropdown__item--events" id="event-type-forum">
+									                Форум
+									            </li>
+									            <li class="dropdown__item dropdown__item--events" id="event-type-lection">
+									                Лекция
+									            </li>
+									            <li class="dropdown__item dropdown__item--events" id="event-type-conference">
+									                Конференция
+									            </li>
+									            <li class="dropdown__item dropdown__item--events" id="event-type-seminar">
+									                Семинар
+									            </li>
+									            <li class="dropdown__item dropdown__item--events" id="event-type-kurs">
+									                Курс
+									            </li>
+									        </ul>
+									    </div>
+					
+									    <input type="submit" value="Найти" class="events__banner__form-submit"  tabindex="4">
+									</div>
+					
+								</form>
+								<!-- Banner search form -->
+					
+						</div>
+					
+						<div class="events__banner__tags">
+							
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Бизнес и инвестиции</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Искусство</a></div>
+								<div class="events__banner__tags__item events__banner__tags__item-current"><a href="#" class="events__banner__tags__link">Маркетинг</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Дизайн</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Разработка</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Технологии</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Менеджмент</a></div>
+								<div class="events__banner__tags__item"><a href="#" class="events__banner__tags__link">Личностный рост</a></div>
+					
+						</div>
+						</div>
+					</div>
+					<!-- Events Banner -->
+					<div class="container">
+						<h1 class="events__title">Маркетинг</h1>
+						<div class="events__filter">
+							<div class="events__filter__container">
+								
+								<div class="events__filter__dates">
+									<ul class="events__filter__dates__list">
+										<li class="events__filter__dates__list__item events__filter__dates__list__item-current">Все даты</li>
+										<li class="events__filter__dates__list__item">Ноябрь</li>
+										<li class="events__filter__dates__list__item">Зимой</li>
+										<li class="events__filter__dates__list__item">Весной</li>
+										<li class="events__filter__dates__list__item">Летом</li>
+									</ul>
+								</div>
+						
+								<!-- Calenadar -->
+								<div class="events__filter__calendar">
+									<label for="datepicker-filter-input" id="datepicker-filter-label"><input type="text" name="datepicker-filter" id="datepicker-filter-input" class="datepicker-filter">Выбор даты</label>
+									
+							    </div>
+							    <!-- Calenadar -->
+						
+							    <!-- Qualify -->
+								<div class="events__filter__qualify">
+							        <select class="selectpicker" title="Уровень квалификации">
+									  <option>Все</option>
+									  <option>Начальный</option>
+									  <option>Средний</option>
+									  <option>Эксперт</option>
+									</select>
+							    </div>
+							    <!-- Qualify -->
+						
+							    <!-- Format -->
+								<div class="events__filter__format">
+							        <select class="selectpicker" title="Формат проведения">
+									  <option>Все</option>
+									  <option>Онлайн</option>
+									  <option>Офлайн</option>
+									</select>
+							    </div>
+							    <!-- Format -->
+						
+								<!-- Sort -->
+								<div class="events__filter__sort">
+							        <select class="selectpicker" title="Сортировать по">
+									  <option>Цена: по возрастанию</option>
+									  <option>Цена: по убыванию</option>
+									  <option>Популярные</option>
+									  <option>Новые</option>
+									  <option>Бесплатные</option>
+									</select>
+							    </div>
+							    <!-- Sort -->	    
+						
+							</div>
+						</div>
+						
+						
+						<!-- Events Content -->
+						<div class="events__content">
+							<div class="events__content__container">
+								<div class="events__content__items">
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-1.jpg" srcset="./img/marketing-1@2x.jpg 2x" alt="Email маркетинг" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">лекция</h5>
+											<h3 class="events__content__item__title">Email маркетинг</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков, необходимый</p>
+										</div>
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+									
+									<section class="events__content__item">
+										<img src="./img/marketing-2.jpg" srcset="./img/marketing-2@2x.jpg 2x" alt="Поисковая оптимизация" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">тренинг</h5>
+											<h3 class="events__content__item__title">Поисковая оптимизация</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-3.jpg" srcset="./img/marketing-3@2x.jpg 2x" alt="Внедрение комплекса 
+						маркетинга" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">СЕМИНАР</h5>
+											<h3 class="events__content__item__title">Внедрение комплекса 
+						маркетинга</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-1.jpg" srcset="./img/marketing-1@2x.jpg 2x" alt="Email маркетинг" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">лекция</h5>
+											<h3 class="events__content__item__title">Email маркетинг</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков, необходимый</p>
+										</div>
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+									
+									<section class="events__content__item">
+										<img src="./img/marketing-2.jpg" srcset="./img/marketing-2@2x.jpg 2x" alt="Поисковая оптимизация" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">тренинг</h5>
+											<h3 class="events__content__item__title">Поисковая оптимизация</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-3.jpg" srcset="./img/marketing-3@2x.jpg 2x" alt="Внедрение комплекса 
+						маркетинга" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">СЕМИНАР</h5>
+											<h3 class="events__content__item__title">Внедрение комплекса 
+						маркетинга</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-1.jpg" srcset="./img/marketing-1@2x.jpg 2x" alt="Email маркетинг" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">лекция</h5>
+											<h3 class="events__content__item__title">Email маркетинг</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков, необходимый</p>
+										</div>
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+									
+									<section class="events__content__item">
+										<img src="./img/marketing-2.jpg" srcset="./img/marketing-2@2x.jpg 2x" alt="Поисковая оптимизация" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">тренинг</h5>
+											<h3 class="events__content__item__title">Поисковая оптимизация</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-3.jpg" srcset="./img/marketing-3@2x.jpg 2x" alt="Внедрение комплекса 
+						маркетинга" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">СЕМИНАР</h5>
+											<h3 class="events__content__item__title">Внедрение комплекса 
+						маркетинга</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-1.jpg" srcset="./img/marketing-1@2x.jpg 2x" alt="Email маркетинг" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">лекция</h5>
+											<h3 class="events__content__item__title">Email маркетинг</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков, необходимый</p>
+										</div>
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+									
+									<section class="events__content__item">
+										<img src="./img/marketing-2.jpg" srcset="./img/marketing-2@2x.jpg 2x" alt="Поисковая оптимизация" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">тренинг</h5>
+											<h3 class="events__content__item__title">Поисковая оптимизация</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+									<section class="events__content__item">
+										<img src="./img/marketing-3.jpg" srcset="./img/marketing-3@2x.jpg 2x" alt="Внедрение комплекса 
+						маркетинга" class="events__content__item__img">
+										<div class="events__content__item__container">
+											<h5 class="events__content__item__type">СЕМИНАР</h5>
+											<h3 class="events__content__item__title">Внедрение комплекса 
+						маркетинга</h3>
+											<p class="events__content__item__description">В этой специализации мы углубимся в маркетинговый микс и набор навыков</p>
+										</div>	
+										<div class="events__content__item__container-info">
+											<span class="events__content__item__date">10 — 12 октября с 19:00 до 21:30</span>
+											<span class="events__content__item__address">Центр подготовки водителей Drive-safe</span>
+										</div>
+										<footer class="events__content__item__footer">
+											<a href="#" class="events__content__item__footer__link">Маркетинг</a>
+											<a href="#" class="events__content__item__footer__link">Бизнес</a>
+											<a href="#" class="events__content__item__footer__link">Технологии</a>
+											<a href="#" class="events__content__item__footer__link">Все</a>
+										</footer>
+										<div class="events__content__item__overlay"></div>
+										<span class="events__content__item__favorite tooltips"><span>В избранное</span></span>
+										<span class="events__content__item__share tooltips"><span>Поделиться</span></span>
+										<a href="#" class="events__content__item__link"></a>
+									</section>
+						
+								</div>
+						
+								<!-- Pagination -->
+								<div class="navigation">
+								    <div class="pagination">
+								        <span class="current">1</span>
+								        <span class="pagination__element page">
+							                <a class="pagination__link" href="#">2</a>
+							            </span>
+								        <span class="pagination__element page">
+							                <a class="pagination__link" href="#">3</a>
+							            </span>
+								        <span class="pagination__element next">
+								            <a class="pagination__link pagination__link--next" href="#"></a>
+								        </span>
+								    </div>
+								</div>
+								<!-- Pagination -->
+						
+							</div>
+						
+							<aside class="content__side">
+								<div class="content__side__block">
+									<h3 class="content__side__title">Рекомендуемые события</h3>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">семинар</h5>
+										<h4 class="content__side__recommend__title">Внедрение комплекса маркетинга</h4>
+										<div class="content__side__recommend__date">10 — 12 октября</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">лекция</h5>
+										<h4 class="content__side__recommend__title">Поиск и выбор бизнес-идеи</h4>
+										<div class="content__side__recommend__date">18 — 20 ноября</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">семинар</h5>
+										<h4 class="content__side__recommend__title">Бизнес-форум АТЛАНТЫ</h4>
+										<div class="content__side__recommend__date">22 декабря</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">тренинг</h5>
+										<h4 class="content__side__recommend__title">Внедрение комплекса маркетинга</h4>
+										<div class="content__side__recommend__date">10 — 12 октября</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">форум</h5>
+										<h4 class="content__side__recommend__title">Поиск и выбор бизнес-идеи</h4>
+										<div class="content__side__recommend__date">20 октября</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<article class="content__side__recommend">
+										<h5 class="content__side__recommend__type">тренинг</h5>
+										<h4 class="content__side__recommend__title">Бизнес-форум АТЛАНТЫ</h4>
+										<div class="content__side__recommend__date">22 октября</div>
+										<a href="#" class="content__side__recommend__link"></a>
+									</article>
+									<button class="content__side__btn"><a href="#">Смотреть все</a></button>
+								</div>
+						
+								<div class="content__side__block content__side__block-subscribe">
+									<div class="content__side__block-subscribe__img"></div>
+									<h3 class="content__side__block-subscribe__title">Не пропустите новые мероприятия</h3>
+									<form action="" class="content__side__subscribe-form">
+										<input type="email" name="subscribe-mail" class="content__side__subscribe-form__mail" placeholder="Введите свой email">	
+										<input type="submit" value="Подписаться на уведомления" class="content__side__subscribe-form__submit">
+									</form>
+								</div>
+						
+								<div class="content__side__block">
+									<h3 class="content__side__title">Ближайшие события</h3>
+									<figure class="content__side__latest">
+										<img class="content__side__latest__img" alt="Поиск и выбор бизнес-идеи" src="./img/event-1.jpg" srcset="./img/event-1@2x.jpg 2x">
+										<figcaption>
+											<h6 class="content__side__latest__title">Поиск и выбор бизнес-идеи</h6>
+											<span class="content__side__latest__date">Сегодня</span>
+										</figcaption>
+										<a href="#" class="content__side__latest__link"></a>
+									</figure>
+									<figure class="content__side__latest">
+										<img class="content__side__latest__img" alt="Внедрение комплекса 
+						маркетинга" src="../img/event-2.jpg" srcset="./img/event-2@2x.jpg 2x">
+										<figcaption>
+											<h6 class="content__side__latest__title">Внедрение комплекса 
+						маркетинга</h6>
+											<span class="content__side__latest__date">Сегодня</span>
+										</figcaption>
+										<a href="#" class="content__side__latest__link"></a>
+									</figure>
+									<figure class="content__side__latest">
+										<img class="content__side__latest__img" alt="Эффективное решение 
+						проблем и принятие решений" src="../img/event-3.jpg" srcset="./img/event-3@2x.jpg 2x">
+										<figcaption>
+											<h6 class="content__side__latest__title">Эффективное решение 
+						проблем и принятие решений</h6>
+											<span class="content__side__latest__date">Четверг</span>
+										</figcaption>
+										<a href="#" class="content__side__latest__link"></a>
+									</figure>
+									<button class="content__side__btn"><a href="#">Смотреть все</a></button>
+								</div>
+							</aside>
+						</div>
+						<!-- Events Content -->
+					</div>
+				
+				</main>
+				
+				<!-- Content -->
+				<section class="social-block">
+					<h4 class="social-block__title">Присоединяйтесь к нам в социальных сетях!</h4>
+					<div class="container social-block__container">
+						<a href="#" class="social-block__link social__link social__link--fb">Facebook</a>
+						<a href="#" class="social-block__link social__link social__link--vk">Vkontakte</a>
+						<a href="#" class="social-block__link social__link social__link--tw">Twitter</a>
+						<a href="#" class="social-block__link social__link social__link--in">Linkedin</a>
+						<a href="#" class="social-block__link social__link social__link--ig">Instagram</a>
+					</div>
+				</section>
+				<!-- Footer -->
+				
+				<footer class="site-footer">
+				    <div class="site-footer__wrapper container">
+				        <div class="site-footer__item site-footer__item--logo">
+				            <div class="site-logo">
+				                <a href="/">
+				                    <img src="https://experum.ru/img/site-logo.png" srcset="https://experum.ru/img/site-logo@2x.png 2x" alt="" height="35">
+				                </a>
+				            </div>
+				        </div>
+				        <div class="site-footer__item site-footer__item--nav">
+				            <nav class="footer-nav">
+				                <div class="footer-nav__item">
+				                    <a class="footer-nav__link" href="/terms">Условия использования</a>
+				                </div>
+				                <div class="footer-nav__item">
+				                    <a class="footer-nav__link" href="/terms">Как это работает</a>
+				                </div>
+				                <div class="footer-nav__item">
+				                    <a class="footer-nav__link" href="/terms">СМИ о нас</a>
+				                </div>
+				                <div class="footer-nav__item">
+				                    <a class="footer-nav__link" href="/terms">Вопросы и ответы</a>
+				                </div>
+				                <div class="footer-nav__item">
+				                    <a class="footer-nav__link" href="/contact">Контакты</a>
+				                </div>
+				            </nav>
+				        </div>
+				        <div class="site-footer__item site-footer__item--copy">
+				            <div class="copy">© 2017, <a href="/">Experum.ru</a></div>
+				        </div>
+				    </div>
+				</footer>
+				
+				<!-- Footer -->
+				<!-- Scripts -->
+					<script src="js/app.js"></script>
+				
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
