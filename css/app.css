@@ -20035,3 +20035,7 @@ input[name='events-searchfield']:-ms-input-placeholder {
     background-size: cover;
   }
 }
+
+.site-header__item--login {
+	display: none;
+}
